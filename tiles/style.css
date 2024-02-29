@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.outer {
+    text-align: center;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(134, 78, 136, 0.15);
+    max-width: 1200px;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    height: 100%;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ede1d0;
+    width: 100%;
+    height: 40px;
+    opacity: .9;
+    z-index: 100;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logo_img {
+    margin-top: 6px;
+    width: 30%;
+}
+
+.search {
+    max-width: 100px;
+}
+
+.search_img {
+    margin-top: 6px;
+    width: 30%;
+}
+
+.navbar .nav-links a {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 20px; 
+    padding: 5px; 
+	padding-bottom: 1px;
+	padding-top: 1px;
+    background-color: #edaa3b; 
+    border-radius: 3px; 
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #94c58e;
+    background-color: #f7c876;
+}
+
+
+.navbar .nav-links a:active {
+    color: #864e88;
+}
+
+.tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.tilebg1 {
+    background-image: url("img/disney_front.jpg");
+}
+
+.tilebg2 {
+    background-image: url("img/collect.jpg");
+}
+
+.tilebg3 {
+    background-image: url("img/clothing.jpg");
+}
+
+.tilebg4 {
+    background-image: url("img/about.jpg");
+}
+
+.tilebg5 {
+    background-image: url("img/contact.jpg");
+}
