@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filters</title>
+
+    <style>
+        .my_filter {
+            position: relative;
+            -webkit-filter: contrast(45%) brightness(108%) sepia(8%) grayscale(70%) hue-rotate(110deg);
+            filter: contrast(45%) brightness(108%) sepia(8%) grayscale(70%) hue-rotate(110deg);
+        }
+
+        .my_filter:hover {
+            animation: myfilteranimation 4s forwards; 
+        }
+
+        @keyframes myfilteranimation {
+            0% {
+                -webkit-filter: contrast(45%) brightness(108%) sepia(8%) grayscale(70%) hue-rotate(110deg);
+                filter: contrast(45%) brightness(108%) sepia(8%) grayscale(70%) hue-rotate(110deg);
+            }
+            100% {
+                -webkit-filter: contrast(80%) brightness(80%) sepia(0%) grayscale(0%) hue-rotate(0deg);
+                filter:  contrast(80%) brightness(80%) sepia(0%) grayscale(0%) hue-rotate(0deg);
+            }
+        }
+
+        .filter::before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            pointer-events: none;
+            mix-blend-mode: exclusion;
+            opacity: 0.5;
+            background: -webkit-radial-gradient(0% 0%, circle closest-corner, rgba(62, 162, 253, 0.5) 10, rgba(70, 70, 70, 0.04));
+            background: radial-gradient(0% 0%, circle closest-corner, rgba(62, 162, 253, 0.5) 10, rgba(70, 70, 70, 0.04));
+        }
+    </style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" alt="flower">
+
+</body>
+</html>
